@@ -1,9 +1,26 @@
-<div class="cont-fix">
+<script>
+    let slideOn = false;
+    let showHiasanBtn = false
+
+    function setSlideOn() {
+        slideOn = true
+    }
+
+    function setShowHiasanBtn(value) {
+        showHiasanBtn = value
+    }
+
+</script>
+
+<div class={`cont-fix ${slideOn?"slide-top":""}`}>
     <div class="container-cover-depan">
         <img alt="bg" class="bg-1" src="/asset_apri/bg_1.jpeg">
+        <div class="efek-putih">
+        </div>
         <div class="pos-tengah-atas">
             <div>The Wedding Of</div>
         </div>
+
         <div class="pos-tengah">
             <img class="hiasan-1" decoding="async" src="/asset_apri/Untitled-1.png" alt="unit-1">
         </div>
@@ -14,10 +31,14 @@
                 <div>Pujiono</div>
             </div>
         </div>
+
         <div class="pos-tengah-bawah">
-            <div class="open-btn">
+            <div on:mouseover={()=>showHiasanBtn = true} on:mouseleave={()=>showHiasanBtn = false} on:click={setSlideOn}
+                 class="open-btn">
                 Open Invitation
-                <img class="open-btn-hiasan" src="/asset_apri/arrow-kanan.svg">
+                {#if showHiasanBtn}
+                    <img class="open-btn-hiasan" src="/asset_apri/arrow-kanan.svg" alt="hiasan-btn">
+                {/if}
             </div>
         </div>
     </div>
@@ -31,6 +52,19 @@
         left: 0;
     }
 
+    .slide-top {
+        animation: slide-from-bottom 1s ease-in-out forwards; /* Animasi berlangsung selama 1 detik */
+    }
+
+    @keyframes slide-from-bottom {
+        0% {
+            transform: translateY(0); /* Mulai dari posisi bawah layar */
+        }
+        100% {
+            transform: translateY(-100%); /* Berakhir di posisi atas layar */
+        }
+    }
+
     .container-cover-depan {
         position: relative;
     }
@@ -39,6 +73,16 @@
         width: 100vw;
         height: 100vh;
         object-fit: cover;
+    }
+
+    .efek-putih {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: #fff3e9;
+        opacity: 0.3;
     }
 
     .pos-tengah {
