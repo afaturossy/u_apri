@@ -14,7 +14,7 @@
     <Box3/>
     <Box4/>
     <Box5/>
-    <Box6/>
+<!--    <Box6/>-->
 </div>
 <style>
     .cont{
