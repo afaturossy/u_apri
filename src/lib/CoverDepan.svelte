@@ -1,14 +1,45 @@
 <script>
+    import {onMount} from "svelte";
+
     let slideOn = false;
     let showHiasanBtn = false
 
     function setSlideOn() {
         slideOn = true
+        unlockScroll()
     }
 
     function setShowHiasanBtn(value) {
         showHiasanBtn = value
     }
+
+    onMount(()=>{
+        lockScroll()
+    })
+
+    function lockScroll() {
+        // Simpan posisi scroll saat ini
+        const scrollY = window.scrollY;
+
+        // Tambahkan properti CSS untuk mengunci scroll
+        document.body.style.overflow = 'hidden';
+        document.body.style.position = 'fixed';
+        document.body.style.top = `-${scrollY}px`;
+    }
+
+    function unlockScroll() {
+        // Ambil nilai top yang disimpan saat scroll terkunci
+        const top = document.body.style.top;
+
+        // Hapus properti CSS untuk mengizinkan scroll lagi
+        document.body.style.overflow = '';
+        document.body.style.position = '';
+        document.body.style.top = '';
+
+        // Gulirkan ke posisi sebelumnya
+        window.scrollTo(0, parseInt(top || '0') * -1);
+    }
+
 
 </script>
 
@@ -42,18 +73,30 @@
             </div>
         </div>
     </div>
-
+    <div class="animate">
+        <img  src="/asset_apri/plane.svg" alt="plane">
+        <img  src="/asset_apri/plane.svg" alt="plane">
+    </div>
 </div>
 
 <style>
+    .animate{
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+    }
+    .animate img{
+        width: 30vw;
+    }
     .cont-fix {
         position: fixed;
         top: 0;
         left: 0;
+        z-index: 50;
     }
 
     .slide-top {
-        animation: slide-from-bottom 1s ease-in-out forwards; /* Animasi berlangsung selama 1 detik */
+        animation: slide-from-bottom 2s ease-in-out forwards; /* Animasi berlangsung selama 1 detik */
     }
 
     @keyframes slide-from-bottom {

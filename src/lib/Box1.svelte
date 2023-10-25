@@ -7,7 +7,7 @@
     <div></div>
     <div></div>
     <div></div>
-    <div class="c">
+    <div class="c_left">
         <div>
             <Nama2Calon/>
         </div>
@@ -35,7 +35,7 @@
         padding-top: 5vh;
     }
 
-    .c {
+    .c_left {
         display: flex;
         justify-items: center;
         justify-content: center;

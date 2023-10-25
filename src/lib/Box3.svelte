@@ -1,0 +1,148 @@
+<script>
+    import Nama2Calon from "$lib/Nama2Calon.svelte";
+</script>
+
+<div class="cont">
+    <div style="display: flex ; justify-content: space-between">
+        <div class="c_left">
+            <img class="deco-l" src="/asset_apri/Untitled-3.png" alt="deco-l">
+        </div>
+        <div class="c_right">
+            <img class="deco-r" src="/asset_apri/Untitled-3.png" alt="deco-r">
+        </div>
+    </div>
+    <div class="content">
+        <p class="item1">Sang Mempelai</p>
+
+        <p class="item2">Apri Akbar</p>
+        <div class="item-3">
+            <div>Putra ketiga dari</div>
+            <div>Bapak Rustam Efendi Guci & Ibu Yuliani</div>
+        </div>
+        <div style="font-family: 'Playfair Display', serif ; font-size: xxx-large ; margin: 2rem 0">&</div>
+
+        <p class="item2">Tuti Puji Rahayu</p>
+        <div class="item-3">
+            <div>Putri pertama dari</div>
+            <div>Bapak Slamet & Ibu Nur Jayanti</div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .cont {
+        background-color: #efebe2;
+        height: calc(100vh - 16px);
+        display: flex;
+        flex-direction: column;
+        border-radius: 0.5rem;
+    }
+
+    /*----------------------*/
+    .content {
+        margin-top: 6rem;
+        text-align: center;
+    }
+
+    .item1 {
+        font-family: 'Old Standard TT', serif;
+        font-style: italic;
+    }
+
+    .item2 {
+        font-family: 'Playfair Display', sans-serif;
+        font-size: x-large;
+
+    }
+
+    .item-3 {
+        font-family: 'Quicksand', sans-serif;
+    }
+
+    /*--------------------*/
+    .deco-l {
+        top: 0;
+        left: 0;
+        rotate: 90deg;
+        position: absolute;
+        transform: translate(-2rem, 3rem);
+    }
+
+    .deco-r {
+        top: 0;
+        right: 0;
+        position: absolute;
+        transform: rotateY(180deg) translate(-3rem, -1rem) rotate(90deg);
+    }
+
+
+    .c_right {
+        position: relative;
+        animation: rotate-left-right-deco-r 3s linear infinite;
+        background-color: red;
+    }
+
+    .c_left {
+        animation: rotate-left-right 3s linear infinite;
+        position: relative;
+        background-color: red;
+    }
+
+    @keyframes rotate-left-right {
+        0% {
+            transform: rotate(0deg); /* Rotasi awal */
+        }
+        50% {
+            transform: rotate(5deg); /* Rotasi ke kiri */
+        }
+        100% {
+            transform: rotate(0deg); /* Rotasi ke kanan */
+        }
+    }
+
+    @keyframes rotate-left-right-deco-r {
+        0% {
+            transform: rotate(0deg); /* Rotasi awal */
+        }
+        50% {
+            transform: rotate(5deg); /* Rotasi ke kiri */
+        }
+        100% {
+            transform: rotate(0deg); /* Rotasi ke kanan */
+        }
+    }
+
+    /* Media query untuk layar HP (contoh: lebar maksimum 480px) */
+    @media (max-width: 480px) {
+        .deco-l {
+            width: 50vw; /* Ubah lebar untuk HP */
+        }
+
+        .deco-r {
+            width: 50vw; /* Ubah lebar untuk HP */
+        }
+
+    }
+
+    /* Media query untuk layar tablet (contoh: lebar antara 481px hingga 768px) */
+    @media (min-width: 481px) and (max-width: 768px) {
+        .deco-l {
+            width: 20vw; /* Ubah lebar untuk tablet */
+        }
+
+        .deco-r {
+            width: 20vw; /* Ubah lebar untuk tablet */
+        }
+    }
+
+    /* Media query untuk layar PC (contoh: lebar minimum 769px) */
+    @media (min-width: 769px) {
+        .deco-l {
+            width: 20vw; /* Kembalikan lebar untuk PC */
+        }
+
+        .deco-r {
+            width: 20vw; /* Kembalikan lebar untuk PC */
+        }
+    }
+</style>
