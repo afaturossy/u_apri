@@ -23,7 +23,7 @@
                 <p>
                     Balai Warga RW 007 Medang Lestari, Pagedangan, Tangerang, Banten
                 </p>
-                <button class="btn-map">VIEW MAP</button>
+                <a href="https://maps.app.goo.gl/3vxPRFwZdcJGnYZP9" class="btn-map">VIEW MAP</a>
             </div>
         </div>
     </div>
@@ -92,6 +92,11 @@
         border-radius: 0.3rem;
         color: white;
         font-family: 'ABeeZee', sans-serif;
+        text-decoration: none;
+        box-shadow: 0px 2px 18px 0px rgba(0, 0, 0, 0.3);
+    }
+    .btn-map:active{
+        background-color: #4f3434;
     }
 
 </style>

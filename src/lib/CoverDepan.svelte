@@ -13,7 +13,10 @@
         showHiasanBtn = value
     }
 
-    onMount(()=>{
+    onMount(() => {
+        // Scroll ke paling atas (0, 0)
+        window.scrollTo(0, 0);
+
         lockScroll()
     })
 
@@ -74,20 +77,22 @@
         </div>
     </div>
     <div class="animate">
-        <img  src="/asset_apri/plane.svg" alt="plane">
-        <img  src="/asset_apri/plane.svg" alt="plane">
+        <img src="/asset_apri/plane.svg" alt="plane">
+        <img src="/asset_apri/plane.svg" alt="plane">
     </div>
 </div>
 
 <style>
-    .animate{
+    .animate {
         display: flex;
         justify-content: center;
         gap: 2rem;
     }
-    .animate img{
+
+    .animate img {
         width: 30vw;
     }
+
     .cont-fix {
         position: fixed;
         top: 0;
