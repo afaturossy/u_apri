@@ -13,7 +13,7 @@
         </div>
     </div>
     <div class="footer">
-        <p>The Wedding |11.03.2021| Kudus</p>
+        <p>The Wedding |18.02.2024| Tangerang</p>
     </div>
 </div>
 
