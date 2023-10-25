@@ -33,7 +33,7 @@
 <style>
     .cont {
         background-color: #efebe2;
-        height: calc(100vh - 16px);
+        height: calc(95vh - 16px);
         display: flex;
         flex-direction: column;
         justify-content: space-between;

@@ -38,7 +38,7 @@
 
     .bg {
         height: 80vh;
-        width: calc(100vw - 6rem);
+        width: calc(95vw - 6rem);
         object-fit: cover;
         border-radius: 150px 150px 15px 15px;
         box-shadow: 0px 2px 18px 0px rgba(0, 0, 0, 0.3);

@@ -108,6 +108,7 @@
         color: white;
         padding: 0.1rem 0.7rem;
         border-radius: 0.5rem;
+        width: 2rem;
     }
 
     .angka {

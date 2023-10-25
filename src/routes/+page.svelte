@@ -6,15 +6,17 @@
     import Box4 from "$lib/Box4.svelte";
     import Box5 from "$lib/Box5.svelte";
     import Box6 from "$lib/Box6.svelte";
+    import Test from "$lib/Test.svelte";
 </script>
 <div class="cont">
     <CoverDepan/>
     <Box1/>
     <Box2/>
     <Box3/>
+    <Test/>
     <Box4/>
     <Box5/>
-<!--    <Box6/>-->
+    <Box6/>
 </div>
 <style>
     .cont{

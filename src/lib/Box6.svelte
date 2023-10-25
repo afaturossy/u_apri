@@ -1,27 +1,44 @@
-
-
 <div class="cont">
     <div class="c_left">
         <img class="bg" src="/asset_apri/bg_1.jpeg" alt="bg">
         <div class="c-text">
             <div style="text-align: center">
-                <div class="heading-first">AKAD NIKAH</div>
-                <p>Minggu, 18 Februari 2024
-                    <br/>
-                    Pukul 09.00 WIB
-                </p>
+                <div class="heading-first">Will You Attend?</div>
+                <div class="box-name">
+                    <label for="name">Name</label>
+                    <div style="display: flex; justify-content: center">
+                        <input id="name">
 
-                <div class="heading">RESEPSI</div>
-                <p>Minggu, 18 Februari 2024
-                    <br/>
-                    Pukul 10.00 - 15.00 WIB
-                </p>
-
-                <div class="heading">LOKASI</div>
-                <p>
-                    Balai Warga RW 007 Medang Lestari, Pagedangan, Tangerang, Banten
-                </p>
-                <button class="btn-map">VIEW MAP</button>
+                    </div>
+                </div>
+                <div class="box-hadir">
+                    <div>Apakah Kamu Akan Hadir?</div>
+                    <div style="margin-top: 0.5rem">
+                        <input type="radio" id="ya" name="hadir" value="Ya Tentu">
+                        <label for="ya">Ya Tentu</label>
+                        <br/>
+                        <input type="radio" id="tidak" name="hadir" value="Maaf, Tidak">
+                        <label for="tidak">Maaf, Tidak</label>
+                    </div>
+                </div>
+                <div class="box-jml-hadir">
+                    <label>
+                        Jumlah Tamu Yang Hadir?
+                    </label>
+                    <div>
+                        <select>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="submit">
+                    <button>SUBMIT</button>
+                </div>
             </div>
         </div>
     </div>
@@ -31,11 +48,12 @@
 <style>
     .cont {
         background-color: #efebe2;
-        height: calc(100vh - 16px);
+        height: calc(95vh - 16px);
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         border-radius: 0.5rem;
+        font-family: serif;
     }
 
     .c_left {
@@ -69,13 +87,6 @@
         color: #6b5a4c;
     }
 
-    .heading {
-        font-size: x-large;
-        text-align: center;
-        font-family: 'Old Standard TT', serif;
-        font-weight: bold;
-        margin-top: 3rem;
-    }
 
     .heading-first {
         font-size: x-large;
@@ -84,12 +95,55 @@
         font-weight: bold;
     }
 
-    .btn-map {
-        background-color: #926962;
-        padding: 0.5rem 1rem;
-        border-radius: 0.3rem;
-        color: white;
-        font-family: 'ABeeZee', sans-serif;
+    .box-name {
+        margin-top: 2rem;
+        text-align: left;
     }
 
+    .box-name label {
+        color: #6b5a4c;
+    }
+
+    .box-name input {
+        all: initial;
+        border-bottom: 1px solid #ae792d;
+        width: 15rem;
+        margin-top: 1rem;
+        color: #926962;
+    }
+
+    .box-hadir {
+        margin-top: 2rem;
+        text-align: left;
+    }
+
+    .box-jml-hadir {
+        text-align: left;
+        margin-top: 3rem;
+    }
+
+    .box-jml-hadir select {
+        background-color: transparent;
+        border: 0;
+        border-bottom: 1px solid #ae792d;
+        width: 15rem;
+        margin-top: 1rem;
+        color: #926962;
+        padding-left: 0.5rem;
+    }
+    .box-jml-hadir select:active{
+        background-color: #926962;
+    }
+    .submit{
+        margin-top: 2rem;
+    }
+    .submit button{
+        background-color: #926962;
+        padding: 0.5rem 1.5rem;
+        color: white;
+        border-radius: 0.5rem;
+    }
+    .submit button:active{
+        color: gray;
+    }
 </style>

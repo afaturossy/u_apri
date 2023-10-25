@@ -1,10 +1,13 @@
 <script>
     import {onMount} from "svelte";
+    import AudioPlayer from "$lib/AudioPlayer.svelte";
 
     let slideOn = false;
     let showHiasanBtn = false
+    let player
 
     function setSlideOn() {
+        player.play()
         slideOn = true
         unlockScroll()
     }
@@ -80,7 +83,9 @@
         <img src="/asset_apri/plane.svg" alt="plane">
         <img src="/asset_apri/plane.svg" alt="plane">
     </div>
+    <AudioPlayer bind:this={player}/>
 </div>
+
 
 <style>
     .animate {
@@ -180,8 +185,10 @@
     }
 
     .hiasan-1 {
-        padding-top: 1.5rem;
+        /*padding-top: 1.5rem;*/
         z-index: 1;
+        animation: rotate 20s linear;
+        animation-iteration-count: 1;
     }
 
     /* Media query untuk layar HP (contoh: lebar maksimum 480px) */
@@ -205,4 +212,12 @@
         }
     }
 
+    @keyframes rotate {
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(180deg);
+        }
+    }
 </style>

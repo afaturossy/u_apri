@@ -32,7 +32,7 @@
 <style>
     .cont {
         background-color: #efebe2;
-        height: calc(100vh - 16px);
+        height: calc(95vh - 16px);
         display: flex;
         flex-direction: column;
         border-radius: 0.5rem;
@@ -65,61 +65,61 @@
         left: 0;
         rotate: 90deg;
         position: absolute;
-        transform: translate(-2rem, 3rem);
+        transform: translate(-1.5rem, 2rem);
     }
 
     .deco-r {
         top: 0;
         right: 0;
         position: absolute;
-        transform: rotateY(180deg) translate(-3rem, -1rem) rotate(90deg);
+        transform: rotateY(180deg) translate(-3rem, -1.5rem) rotate(90deg);
     }
 
 
     .c_right {
         position: relative;
-        animation: rotate-left-right-deco-r 3s linear infinite;
+        animation: rotate-left-right-deco-r 10s linear infinite;
         background-color: red;
     }
 
     .c_left {
-        animation: rotate-left-right 3s linear infinite;
+        animation: rotate-left-right 10s linear infinite;
         position: relative;
         background-color: red;
     }
 
     @keyframes rotate-left-right {
         0% {
-            transform: rotate(0deg); /* Rotasi awal */
+            transform: rotate(-5deg); /* Rotasi awal */
         }
         50% {
-            transform: rotate(5deg); /* Rotasi ke kiri */
+            transform: rotate(10deg); /* Rotasi ke kiri */
         }
         100% {
-            transform: rotate(0deg); /* Rotasi ke kanan */
+            transform: rotate(-5deg); /* Rotasi ke kanan */
         }
     }
 
     @keyframes rotate-left-right-deco-r {
         0% {
-            transform: rotate(0deg); /* Rotasi awal */
+            transform: rotate(5deg); /* Rotasi awal */
         }
         50% {
-            transform: rotate(5deg); /* Rotasi ke kiri */
+            transform: rotate(-10deg); /* Rotasi ke kiri */
         }
         100% {
-            transform: rotate(0deg); /* Rotasi ke kanan */
+            transform: rotate(5deg); /* Rotasi ke kanan */
         }
     }
 
     /* Media query untuk layar HP (contoh: lebar maksimum 480px) */
     @media (max-width: 480px) {
         .deco-l {
-            width: 50vw; /* Ubah lebar untuk HP */
+            width: 52vw; /* Ubah lebar untuk HP */
         }
 
         .deco-r {
-            width: 50vw; /* Ubah lebar untuk HP */
+            width: 52vw; /* Ubah lebar untuk HP */
         }
 
     }
