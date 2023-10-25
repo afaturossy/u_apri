@@ -96,7 +96,7 @@
     }
 
     .slide-top {
-        animation: slide-from-bottom 2s ease-in-out forwards; /* Animasi berlangsung selama 1 detik */
+        animation: slide-from-bottom 1.3s ease-in-out forwards; /* Animasi berlangsung selama 1 detik */
     }
 
     @keyframes slide-from-bottom {
