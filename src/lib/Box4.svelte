@@ -1,7 +1,3 @@
-<script>
-    import Nama2Calon from "$lib/Nama2Calon.svelte";
-</script>
-
 <div class="cont">
     <div class="c_left">
         <img class="bg" src="/asset_apri/bg_1.jpeg" alt="bg">
@@ -23,6 +19,8 @@
                 <p>
                     Balai Warga RW 007 Medang Lestari, Pagedangan, Tangerang, Banten
                 </p>
+                <br/>
+                <br/>
                 <a href="https://maps.app.goo.gl/3vxPRFwZdcJGnYZP9" class="btn-map">VIEW MAP</a>
             </div>
         </div>
@@ -41,11 +39,9 @@
     }
 
     .c_left {
-
         margin: 2rem;
         position: relative;
-        height: 70vh;
-
+        height: 90vh;
     }
 
     .bg {
@@ -95,7 +91,8 @@
         text-decoration: none;
         box-shadow: 0px 2px 18px 0px rgba(0, 0, 0, 0.3);
     }
-    .btn-map:active{
+
+    .btn-map:active {
         background-color: #4f3434;
     }
 

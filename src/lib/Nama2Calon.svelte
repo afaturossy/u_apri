@@ -6,7 +6,7 @@
         <div class="names">
             <div>Akbar</div>
             <div>&</div>
-            <div>Pujiono</div>
+            <div>Puji</div>
         </div>
     </div>
 </div>

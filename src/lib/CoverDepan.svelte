@@ -65,7 +65,7 @@
             <div class="names">
                 <div>Akbar</div>
                 <div>&</div>
-                <div>Pujiono</div>
+                <div>Puji</div>
             </div>
         </div>
 
@@ -79,10 +79,10 @@
             </div>
         </div>
     </div>
-    <div class="animate">
-        <img src="/asset_apri/plane.svg" alt="plane">
-        <img src="/asset_apri/plane.svg" alt="plane">
-    </div>
+<!--    <div class="animate">-->
+<!--        <img src="/asset_apri/plane.svg" alt="plane">-->
+<!--        <img src="/asset_apri/plane.svg" alt="plane">-->
+<!--    </div>-->
     <AudioPlayer bind:this={player}/>
 </div>
 

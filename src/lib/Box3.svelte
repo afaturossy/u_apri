@@ -20,11 +20,11 @@
             <div>Bapak Rustam Efendi Guci & Ibu Yuliani</div>
         </div>
         <div style="font-family: 'Playfair Display', serif ; font-size: xxx-large ; margin: 2rem 0">&</div>
-
-        <p class="item2">Tuti Puji Rahayu</p>
+        <br/>
+        <p  class="item2">Tuti Puji Rahayu</p>
         <div class="item-3">
             <div>Putri pertama dari</div>
-            <div>Bapak Slamet & Ibu Nur Jayanti</div>
+            <div>Bapak Slamet & Ibu Nur Jayati</div>
         </div>
     </div>
     <div
@@ -42,7 +42,7 @@
 <style>
     .cont {
         background-color: #efebe2;
-        height: calc(95vh - 16px);
+        height: 40rem;
         display: flex;
         flex-direction: column;
         border-radius: 0.5rem;
