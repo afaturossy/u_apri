@@ -21,7 +21,7 @@
 <style>
     .cont {
         background-color: #efebe2;
-        height: 40rem;
+        height: 45rem;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -38,7 +38,7 @@
     }
 
     .bg {
-        height: 33rem;
+        height: 38rem;
         width: calc(95vw - 6rem);
         object-fit: cover;
         border-radius: 150px 150px 15px 15px;
