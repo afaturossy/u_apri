@@ -19,7 +19,7 @@
                 <div class="c-text">
                     <div class="pertemuan">
                         <div>
-                            PERTEMUAN
+                            Pertemuan
                         </div>
                         <p>
                             Tidak ada yang kebetulan di dunia ini, semua sudah tersusun rapi oleh sang maha kuasa, kita
@@ -43,7 +43,7 @@
                 <div class="c-text">
                     <div class="pertemuan">
                         <div>
-                            PENDEKATAN
+                            Pendekatan
                         </div>
                         <p>
                             Katanya cinta dapat tumbuh karena kebersamaan, seiring berjalannya waktu kami semakin dekat,
@@ -62,7 +62,7 @@
                 <div class="c-text">
                     <div class="pertemuan">
                         <div>
-                            LAMARAN
+                            Lamaran
                         </div>
                         <p>
                             Kehendak-Nya menuntun kami pada sebuah pertemuan yang tak perna di sangka, hingga akhirnya
@@ -82,7 +82,7 @@
                 <div class="c-text">
                     <div class="pertemuan">
                         <div>
-                            MENIKAH
+                            Menikah
                         </div>
                         <p>
                             Percayalah, bukan karena bertemu lalu berjodoh tapi karena berjodohlah kami dipertemukan,
@@ -171,8 +171,7 @@
 
     .pertemuan div {
         color: #4f3434;
-        font-weight: bold;
-        font-size: x-large;
+        font-size: xx-large;
         /*font-family: "Cinzel", serif;*/
         font-style: italic;
         font-family: 'Playfair Display', serif;
