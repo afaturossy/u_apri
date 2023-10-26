@@ -5,7 +5,7 @@
 <div class="cont">
 <div class="title">BEST WISHES</div>
     <div>
-        <textarea/>
+        <textarea> </textarea>
         <input>
     </div>
 </div>
