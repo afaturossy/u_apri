@@ -15,7 +15,7 @@
         <!--    pertemuan-->
         <div style="display: flex; justify-content: center; margin-top: 2rem">
             <div class="cont-capsule">
-                <img style="height: 33rem" src="/asset_apri/bg_1.jpeg" class="bg" alt="bg">
+                <img style="height: 34rem" src="/asset_apri/bg_1.jpeg" class="bg" alt="bg">
                 <div class="c-text">
                     <div class="pertemuan">
                         <div>
@@ -78,7 +78,7 @@
         <!--    pendekatan -->
         <div class="b-pendekatan" style="display: flex; justify-content: center ; margin-top: 2rem">
             <div class="cont-capsule">
-                <img style="height: 30rem; margin-bottom: 4rem" src="/asset_apri/bg_1.jpeg" class="bg" alt="bg">
+                <img style="height: 33rem; margin-bottom: 4rem" src="/asset_apri/bg_1.jpeg" class="bg" alt="bg">
                 <div class="c-text">
                     <div class="pertemuan">
                         <div>
@@ -180,7 +180,7 @@
     }
 
     .pertemuan p {
-        text-align: justify;
+        text-align: center;
         padding: 0 0.5rem;
         font-style: italic;
         font-family: 'Playfair Display', serif;
