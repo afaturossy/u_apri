@@ -79,6 +79,7 @@
     }
 
     .content {
+        margin-top: 10%;
         position: absolute;
         top: 0;
         left: 0;
@@ -100,7 +101,7 @@
         display: flex;
         justify-content: center;
         gap: 1rem;
-        margin-top: 2rem;
+        margin-top: 4rem;
     }
 
     .day-box {

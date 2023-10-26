@@ -25,6 +25,7 @@
         letter-spacing: 1px;
         font-weight: bold;
         z-index: 10;
+        font-style: italic;
     }
 
     .hiasan-1 {

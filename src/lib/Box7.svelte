@@ -15,7 +15,7 @@
         <!--    pertemuan-->
         <div style="display: flex; justify-content: center; margin-top: 2rem">
             <div class="cont-capsule">
-                <img src="/asset_apri/bg_1.jpeg" class="bg" alt="bg">
+                <img style="height: 33rem" src="/asset_apri/bg_1.jpeg" class="bg" alt="bg">
                 <div class="c-text">
                     <div class="pertemuan">
                         <div>
@@ -39,7 +39,7 @@
         <!--    pendekatan -->
         <div class="b-pendekatan" style="display: flex; justify-content: center ; margin-top: 2rem">
             <div class="cont-capsule">
-                <img  src="/asset_apri/bg_1.jpeg" class="bg" alt="bg">
+                <img style="height: 26rem" src="/asset_apri/bg_1.jpeg" class="bg" alt="bg">
                 <div class="c-text">
                     <div class="pertemuan">
                         <div>
@@ -58,7 +58,7 @@
         <!--    pendekatan -->
         <div class="b-pendekatan" style="display: flex; justify-content: center ; margin-top: 2rem">
             <div class="cont-capsule">
-                <img src="/asset_apri/bg_1.jpeg" class="bg" alt="bg">
+                <img style="height: 25rem" src="/asset_apri/bg_1.jpeg" class="bg" alt="bg">
                 <div class="c-text">
                     <div class="pertemuan">
                         <div>
@@ -78,7 +78,7 @@
         <!--    pendekatan -->
         <div class="b-pendekatan" style="display: flex; justify-content: center ; margin-top: 2rem">
             <div class="cont-capsule">
-                <img src="/asset_apri/bg_1.jpeg" class="bg" alt="bg">
+                <img style="height: 30rem; margin-bottom: 4rem" src="/asset_apri/bg_1.jpeg" class="bg" alt="bg">
                 <div class="c-text">
                     <div class="pertemuan">
                         <div>
@@ -138,7 +138,6 @@
     }
 
     .bg {
-        height: 35rem;
         width: 80%;
         object-fit: cover;
         border-radius: 150px;

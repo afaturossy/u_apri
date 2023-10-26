@@ -19,8 +19,7 @@
             <div>Putra ketiga dari</div>
             <div>Bapak Rustam Efendi Guci & Ibu Yuliani</div>
         </div>
-        <div style="font-family: 'Playfair Display', serif ; font-size: xxx-large ; margin: 2rem 0">&</div>
-        <br/>
+        <div style="font-family: 'Playfair Display', serif ; font-size: xxx-large ; margin: 1rem 0">&</div>
         <p  class="item2">Tuti Puji Rahayu</p>
         <div class="item-3">
             <div>Putri pertama dari</div>
@@ -57,11 +56,13 @@
     .item1 {
         font-family: 'Old Standard TT', serif;
         font-style: italic;
+        font-weight: bold;
     }
 
     .item2 {
         font-family: 'Playfair Display', sans-serif;
-        font-size: x-large;
+        font-style: italic;
+        font-size: 2rem;
 
     }
 
@@ -82,7 +83,7 @@
         top: 0;
         right: 0;
         position: absolute;
-        transform: rotateY(180deg) translate(-3rem, -1.5rem) rotate(90deg);
+        transform: rotateY(180deg) translate(-2.2rem, -1.5rem) rotate(90deg);
     }
 
     .deco-l-bottom {
@@ -97,7 +98,7 @@
         top: 0;
         right: 0;
         position: absolute;
-        transform: rotateY(180deg) translate(-3rem, -1.5rem) rotate(90deg);
+        transform: rotateY(180deg) translate(-2.2rem, -1.5rem) rotate(90deg);
     }
 
 

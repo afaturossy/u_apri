@@ -4,9 +4,7 @@
 
 <div class="cont">
     <div class="title">SAVE THE DATE</div>
-    <div></div>
-    <div></div>
-    <div></div>
+
     <div class="c_left">
         <div>
             <Nama2Calon/>
@@ -20,7 +18,7 @@
 <style>
     .cont {
         background-color: #efebe2;
-        height: calc(95vh - 16px);
+        height: 38rem;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -32,7 +30,7 @@
         font-family: 'Old Standard TT', serif;
         font-weight: bold;
         text-align: center;
-        padding-top: 5vh;
+        padding-top: 3rem;
     }
 
     .c_left {
@@ -40,11 +38,12 @@
         justify-items: center;
         justify-content: center;
         background-color: red;
+        margin-top: 11rem;
     }
 
     .footer {
         display: flex;
         justify-content: center;
-        margin-top: 40vh
+        margin-top: 15rem
     }
 </style>

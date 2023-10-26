@@ -31,7 +31,7 @@
 <style>
     .cont {
         background-color: #efebe2;
-        height: calc(95vh - 16px);
+        height: 40rem;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -41,11 +41,11 @@
     .c_left {
         margin: 2rem;
         position: relative;
-        height: 90vh;
+        height: 40rem;
     }
 
     .bg {
-        height: 80vh;
+        height: 35rem;
         width: calc(100vw - 6rem);
         object-fit: cover;
         border-radius: 150px 150px 15px 15px;
