@@ -138,8 +138,8 @@
     }
 
     .bg {
-        height: 30rem;
-        width: 90%;
+        height: 35rem;
+        width: 80%;
         object-fit: cover;
         border-radius: 150px;
         box-shadow: 0px 2px 18px 0px rgba(0, 0, 0, 0.3);
@@ -161,7 +161,7 @@
     }
 
     .pertemuan {
-        padding: 0 1rem;
+        padding: 0 2.2rem;
         font-family: serif;
         letter-spacing: 1px;
         text-align: center;
