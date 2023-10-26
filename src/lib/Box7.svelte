@@ -188,5 +188,4 @@
             grid-template-columns: 1fr 1fr; /* Dua kolom untuk layar tablet dan PC */
         }
     }
-    Dalam
 </style>
