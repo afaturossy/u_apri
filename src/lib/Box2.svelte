@@ -26,6 +26,7 @@
         flex-direction: column;
         justify-content: space-between;
         border-radius: 0.5rem;
+
     }
 
     .c_left {
@@ -52,6 +53,7 @@
         bottom: 0;
         left: 0;
         right: 0;
+
     }
 
 
@@ -68,12 +70,16 @@
         padding-left: 0.5rem;
         padding-right: 1.2rem;
         text-align: justify;
+        font-style: italic;
+        font-family: 'Playfair Display', serif;
     }
 
     .surah{
         text-align: center;
         font-size: medium;
         color: #6b5a4c;
+        font-style: italic;
+        font-family: 'Playfair Display', serif;
     }
 
     /* Media query untuk perangkat seluler (contoh: lebar maksimum 768px) */

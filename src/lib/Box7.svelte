@@ -121,6 +121,7 @@
 
     .puisi {
         font-family: "Playfair Display", serif;
+        font-style: italic;
         font-size: small;
         text-align: center;
         padding: 0 2rem;
@@ -172,13 +173,17 @@
         color: #4f3434;
         font-weight: bold;
         font-size: x-large;
-        font-family: "Cinzel", serif;
+        /*font-family: "Cinzel", serif;*/
+        font-style: italic;
+        font-family: 'Playfair Display', serif;
         margin-bottom: 2rem;
     }
 
     .pertemuan p {
         text-align: justify;
         padding: 0 0.5rem;
+        font-style: italic;
+        font-family: 'Playfair Display', serif;
     }
 
     /* Untuk layar tablet dan PC (lebar lebih dari 768px) */

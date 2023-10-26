@@ -19,7 +19,7 @@
             <div>Putra ketiga dari</div>
             <div>Bapak Rustam Efendi Guci & Ibu Yuliani</div>
         </div>
-        <div style="font-family: 'Playfair Display', serif ; font-size: xxx-large ; margin: 1rem 0">&</div>
+        <div style="font-family: 'Playfair Display', serif ; font-size: xxx-large ; margin: 1rem 0 ;font-style: italic">&</div>
         <p  class="item2">Tuti Puji Rahayu</p>
         <div class="item-3">
             <div>Putri pertama dari</div>
@@ -54,8 +54,10 @@
     }
 
     .item1 {
-        font-family: 'Old Standard TT', serif;
+        /*font-family: 'Old Standard TT', serif;*/
+        /*font-style: italic;*/
         font-style: italic;
+        font-family: 'Playfair Display', serif;
         font-weight: bold;
     }
 
@@ -67,7 +69,9 @@
     }
 
     .item-3 {
-        font-family: 'Quicksand', sans-serif;
+        /*font-family: 'Quicksand', sans-serif;*/
+        font-style: italic;
+        font-family: 'Playfair Display', serif;
     }
 
     /*--------------------*/

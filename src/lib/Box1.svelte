@@ -27,7 +27,9 @@
 
     .title {
         font-size: large;
-        font-family: 'Old Standard TT', serif;
+        /*font-family: 'Old Standard TT', serif;*/
+        font-family: 'Playfair Display', serif;
+        font-style: italic;
         font-weight: bold;
         text-align: center;
         padding-top: 3rem;
@@ -42,6 +44,8 @@
     }
 
     .footer {
+        font-family: 'Playfair Display', serif;
+        font-style: italic;
         display: flex;
         justify-content: center;
         margin-top: 15rem

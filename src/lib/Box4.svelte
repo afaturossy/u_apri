@@ -36,6 +36,7 @@
         flex-direction: column;
         justify-content: space-between;
         border-radius: 0.5rem;
+
     }
 
     .c_left {
@@ -63,14 +64,18 @@
         bottom: 0;
         left: 0;
         right: 0;
-        font-family: serif;
+        /*font-family: serif;*/
+        font-style: italic;
+        font-family: 'Playfair Display', serif;
         color: #6b5a4c;
     }
 
     .heading {
         font-size: x-large;
         text-align: center;
-        font-family: 'Old Standard TT', serif;
+        /*font-family: 'Old Standard TT', serif;*/
+        font-style: italic;
+        font-family: 'Playfair Display', serif;
         font-weight: bold;
         margin-top: 3rem;
     }
@@ -78,7 +83,9 @@
     .heading-first {
         font-size: x-large;
         text-align: center;
-        font-family: 'Old Standard TT', serif;
+        /*font-family: 'Old Standard TT', serif;*/
+        font-style: italic;
+        font-family: 'Playfair Display', serif;
         font-weight: bold;
     }
 
@@ -87,7 +94,9 @@
         padding: 0.5rem 1rem;
         border-radius: 0.3rem;
         color: white;
-        font-family: 'ABeeZee', sans-serif;
+        /*font-family: 'ABeeZee', sans-serif;*/
+        font-style: italic;
+        font-family: 'Playfair Display', serif;
         text-decoration: none;
         box-shadow: 0px 2px 18px 0px rgba(0, 0, 0, 0.3);
     }

@@ -21,7 +21,9 @@
 
     .title {
         font-size: xx-large;
-        font-family: Cinzel, serif;
+        /*font-family: Cinzel, serif;*/
+        font-style: italic;
+        font-family: 'Playfair Display', serif;
         font-weight: bold;
         text-align: center;
         padding-top: 5vh;

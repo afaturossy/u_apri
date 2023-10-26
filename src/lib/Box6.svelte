@@ -54,7 +54,9 @@
         flex-direction: column;
         justify-content: space-between;
         border-radius: 0.5rem;
-        font-family: serif;
+        /*font-family: serif;*/
+        font-style: italic;
+        font-family: 'Playfair Display', serif;
     }
 
     .c_left {
@@ -92,7 +94,9 @@
         bottom: 0;
         left: 0;
         right: 0;
-        font-family: serif;
+        /*font-family: serif;*/
+        font-style: italic;
+        font-family: 'Playfair Display', serif;
         color: #6b5a4c;
     }
 
@@ -100,7 +104,9 @@
     .heading-first {
         font-size: x-large;
         text-align: center;
-        font-family: 'Old Standard TT', serif;
+        /*font-family: 'Old Standard TT', serif;*/
+        font-style: italic;
+        font-family: 'Playfair Display', serif;
         font-weight: bold;
         margin-top: 2rem;
     }
@@ -155,6 +161,8 @@
         padding: 0.5rem 1.5rem;
         color: white;
         border-radius: 0.5rem;
+        font-style: italic;
+        font-family: 'Playfair Display', serif;
     }
 
     .submit button:active {
