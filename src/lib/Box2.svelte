@@ -65,6 +65,9 @@
         margin-top: 2rem;
         line-height: 1.8rem;
         padding-bottom: 1rem;
+        padding-left: 0.5rem;
+        padding-right: 1.2rem;
+        text-align: justify;
     }
 
     .surah{

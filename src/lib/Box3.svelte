@@ -27,6 +27,16 @@
             <div>Bapak Slamet & Ibu Nur Jayanti</div>
         </div>
     </div>
+    <div
+            style="display: flex ; justify-content: space-between ; transform: rotateX(180deg); margin-top: auto;"
+    >
+        <div class="c_left">
+            <img class="deco-l-bottom" src="/asset_apri/Untitled-3.png" alt="deco-l">
+        </div>
+        <div class="c_right">
+            <img class="deco-r-bottom" src="/asset_apri/Untitled-3.png" alt="deco-r">
+        </div>
+    </div>
 </div>
 
 <style>
@@ -75,6 +85,21 @@
         transform: rotateY(180deg) translate(-3rem, -1.5rem) rotate(90deg);
     }
 
+    .deco-l-bottom {
+        top: 0;
+        left: 0;
+        rotate: 90deg;
+        position: absolute;
+        transform: translate(-1.5rem, 2rem);
+    }
+
+    .deco-r-bottom {
+        top: 0;
+        right: 0;
+        position: absolute;
+        transform: rotateY(180deg) translate(-3rem, -1.5rem) rotate(90deg);
+    }
+
 
     .c_right {
         position: relative;
@@ -92,7 +117,7 @@
         0% {
             transform: rotate(-5deg); /* Rotasi awal */
         }
-        50% {
+        30% {
             transform: rotate(10deg); /* Rotasi ke kiri */
         }
         100% {
@@ -104,7 +129,7 @@
         0% {
             transform: rotate(5deg); /* Rotasi awal */
         }
-        50% {
+        25% {
             transform: rotate(-10deg); /* Rotasi ke kiri */
         }
         100% {
@@ -122,6 +147,14 @@
             width: 52vw; /* Ubah lebar untuk HP */
         }
 
+        .deco-l-bottom {
+            width: 45vw; /* Ubah lebar untuk HP */
+        }
+
+        .deco-r-bottom {
+            width: 45vw; /* Ubah lebar untuk HP */
+        }
+
     }
 
     /* Media query untuk layar tablet (contoh: lebar antara 481px hingga 768px) */
@@ -133,6 +166,14 @@
         .deco-r {
             width: 20vw; /* Ubah lebar untuk tablet */
         }
+
+        .deco-l-bottom {
+            width: 18vw; /* Ubah lebar untuk tablet */
+        }
+
+        .deco-r-bottom {
+            width: 18vw; /* Ubah lebar untuk tablet */
+        }
     }
 
     /* Media query untuk layar PC (contoh: lebar minimum 769px) */
@@ -143,6 +184,14 @@
 
         .deco-r {
             width: 20vw; /* Kembalikan lebar untuk PC */
+        }
+
+        .deco-l-bottom {
+            width: 18vw; /* Kembalikan lebar untuk PC */
+        }
+
+        .deco-r-bottom {
+            width: 18vw; /* Kembalikan lebar untuk PC */
         }
     }
 </style>

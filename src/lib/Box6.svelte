@@ -1,6 +1,7 @@
 <div class="cont">
     <div class="c_left">
         <img class="bg" src="/asset_apri/bg_1.jpeg" alt="bg">
+        <img src="/asset_apri/Untitled-3.png" class="hiasan-atas">
         <div class="c-text">
             <div style="text-align: center">
                 <div class="heading-first">Will You Attend?</div>
@@ -74,6 +75,14 @@
         opacity: .6;
     }
 
+    .hiasan-atas{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 50vw;
+        transform: translate(-2rem , -2rem) ;
+    }
+
     .c-text {
         position: absolute;
         display: flex;
@@ -93,6 +102,7 @@
         text-align: center;
         font-family: 'Old Standard TT', serif;
         font-weight: bold;
+        margin-top: 2rem;
     }
 
     .box-name {
@@ -131,19 +141,44 @@
         color: #926962;
         padding-left: 0.5rem;
     }
-    .box-jml-hadir select:active{
+
+    .box-jml-hadir select:active {
         background-color: #926962;
     }
-    .submit{
+
+    .submit {
         margin-top: 2rem;
     }
-    .submit button{
+
+    .submit button {
         background-color: #926962;
         padding: 0.5rem 1.5rem;
         color: white;
         border-radius: 0.5rem;
     }
-    .submit button:active{
+
+    .submit button:active {
         color: gray;
+    }
+
+    /* Untuk layar HP (misalnya, lebar kurang dari 768px) */
+    @media (max-width: 767px) {
+        .hiasan-atas {
+            width: 50vw; /* Atur lebar sesuai dengan kebutuhan untuk layar HP */
+        }
+    }
+
+    /* Untuk layar tablet (misalnya, lebar antara 768px dan 1024px) */
+    @media (min-width: 768px) and (max-width: 1024px) {
+        .hiasan-atas {
+            width: 30vw; /* Atur lebar sesuai dengan kebutuhan untuk layar tablet */
+        }
+    }
+
+    /* Untuk layar komputer (misalnya, lebar lebih dari 1024px) */
+    @media (min-width: 1025px) {
+        .hiasan-atas {
+            width: 20vw; /* Atur lebar sesuai dengan kebutuhan untuk layar komputer */
+        }
     }
 </style>
