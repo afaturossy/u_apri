@@ -112,9 +112,11 @@
     @keyframes slide-from-bottom {
         0% {
             transform: translateY(0); /* Mulai dari posisi bawah layar */
+            opacity: 1;
         }
         100% {
             transform: translateY(-100%); /* Berakhir di posisi atas layar */
+            opacity: 0;
         }
     }
 
@@ -192,8 +194,8 @@
     .hiasan-1 {
         /*padding-top: 1.5rem;*/
         z-index: 1;
-        animation: rotate 20s linear;
-        animation-iteration-count: 1;
+        animation: rotate 30s linear infinite;
+        /*animation-iteration-count: 1;*/
     }
 
     /* Media query untuk layar HP (contoh: lebar maksimum 480px) */
