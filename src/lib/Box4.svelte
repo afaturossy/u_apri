@@ -1,27 +1,69 @@
+<script>
+    import {onMount} from "svelte";
+
+    let observer
+    let el_1
+    let el_2
+    let el_3
+    let el_4
+    let el_5
+    let el_6
+    let el_7
+
+    function handleIntersection(entries, observer) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.remove("before");
+                entry.target.classList.add("anim-scale");
+            }
+        });
+    }
+
+    onMount(() => {
+        observer = new IntersectionObserver(handleIntersection, {
+            root: null, // Tidak ada elemen root yang diatur (viewport utama)
+            rootMargin: "0px", // Margin diatur ke 0px
+            threshold: 0.5 // Dipantau saat setengah elemen terlihat
+        });
+
+        observer.observe(el_1)
+        observer.observe(el_2)
+        observer.observe(el_3)
+        observer.observe(el_4)
+        observer.observe(el_5)
+        observer.observe(el_6)
+        observer.observe(el_7)
+    })
+
+
+</script>
+
 <div class="cont">
     <div class="c_left">
         <img class="bg" src="/asset_apri/bg_1.jpeg" alt="bg">
         <div class="c-text">
             <div style="text-align: center">
-                <div class="heading-first">AKAD NIKAH</div>
-                <p>Minggu, 18 Februari 2024
+                <div bind:this={el_1} class="heading-first">AKAD NIKAH</div>
+                <p bind:this={el_2}>Minggu, 18 Februari 2024
                     <br/>
                     Pukul 09.00 WIB
                 </p>
 
-                <div class="heading">RESEPSI</div>
-                <p>Minggu, 18 Februari 2024
+                <div bind:this={el_3} class="heading">RESEPSI</div>
+                <p bind:this={el_4}>Minggu, 18 Februari 2024
                     <br/>
                     Pukul 10.00 - 15.00 WIB
                 </p>
 
-                <div class="heading">LOKASI</div>
-                <p>
+                <div bind:this={el_5} class="heading">LOKASI</div>
+                <p bind:this={el_6}>
                     Balai Warga RW 007 Medang Lestari, Pagedangan, Tangerang, Banten
                 </p>
                 <br/>
                 <br/>
-                <a href="https://maps.app.goo.gl/3vxPRFwZdcJGnYZP9" class="btn-map">VIEW MAP</a>
+                <div bind:this={el_7}>
+                    <a href="https://maps.app.goo.gl/3vxPRFwZdcJGnYZP9" class="btn-map">VIEW MAP</a>
+                </div>
             </div>
         </div>
     </div>

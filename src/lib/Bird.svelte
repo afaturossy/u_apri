@@ -18,7 +18,7 @@
 
 <style>
     .bird {
-        background-image: url(http://localhost:5173/asset_apri/bird-cells.svg);
+        background-image: url(https://undangan.akbar-puji.digital/asset_apri/bird-cells.svg);
         background-size: auto 100%;
         width: 88px;
         height: 125px;

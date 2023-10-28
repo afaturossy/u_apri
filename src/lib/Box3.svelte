@@ -1,5 +1,37 @@
 <script>
-    import Nama2Calon from "$lib/Nama2Calon.svelte";
+    import {onMount} from "svelte";
+
+    let observer
+    let el_1
+    let el_2
+    let el_3
+    let el_4
+    let el_5
+
+    function handleIntersection(entries, observer) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.remove("before");
+                entry.target.classList.add("anim-scale");
+            }
+        });
+    }
+
+    onMount(() => {
+        observer = new IntersectionObserver(handleIntersection, {
+            root: null, // Tidak ada elemen root yang diatur (viewport utama)
+            rootMargin: "0px", // Margin diatur ke 0px
+            threshold: 0.5 // Dipantau saat setengah elemen terlihat
+        });
+
+        observer.observe(el_1)
+        observer.observe(el_2)
+        observer.observe(el_3)
+        observer.observe(el_4)
+        observer.observe(el_5)
+    })
+
+
 </script>
 
 <div class="cont">
@@ -12,16 +44,18 @@
         </div>
     </div>
     <div class="content">
-        <p class="item1">Sang Mempelai</p>
+        <p bind:this={el_1} class="item1">Sang Mempelai</p>
 
-        <p class="item2">Apri Akbar</p>
-        <div class="item-3">
+        <p bind:this={el_2} class="item2">Apri Akbar</p>
+        <div bind:this={el_3} class="item-3">
             <div>Putra ketiga dari</div>
             <div>Bapak Rustam Efendi Guci & Ibu Yuliani</div>
         </div>
-        <div style="font-family: 'Playfair Display', serif ; font-size: xxx-large ; margin: 1rem 0 ;font-style: italic">&</div>
-        <p  class="item2">Tuti Puji Rahayu</p>
-        <div class="item-3">
+        <div style="font-family: 'Playfair Display', serif ; font-size: xxx-large ; margin: 1rem 0 ;font-style: italic">
+            &
+        </div>
+        <p bind:this={el_4} class="item2">Tuti Puji Rahayu</p>
+        <div bind:this={el_5} class="item-3">
             <div>Putri pertama dari</div>
             <div>Bapak Slamet & Ibu Nur Jayati</div>
         </div>
