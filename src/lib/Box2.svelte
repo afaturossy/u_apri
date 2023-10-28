@@ -6,8 +6,8 @@
     <div class="c_left">
         <img class="bg" src="/asset_apri/bg_1.jpeg" alt="bg">
         <div class="c-text">
-            <p class="ayat">بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ</p>
-            <p class="arti">
+            <p class="ayat anim-lmovescale">بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ</p>
+            <p class="arti anim-rmovescale">
                 “Dan diantara tanda-tanda kekuasaan-Nya ialah diciptakan Nya untukmu pasangan hidup dari jenismu sendiri
                 supaya kamu mendapat ketenangan hati dan dijadikan-Nya kasih sayang diantara kamu. Sesungguhnya yang
                 demikian menjadi tanda-tanda kebesaran-Nya bagi orang-orang yang berfikir.”

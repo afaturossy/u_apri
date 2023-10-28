@@ -5,6 +5,7 @@
     let slideOn = false;
     let showHiasanBtn = false
     let player
+    let dear = null
 
     function setSlideOn() {
         player.play()
@@ -46,6 +47,13 @@
         window.scrollTo(0, parseInt(top || '0') * -1);
     }
 
+    function getParamsTo() {
+        const url = new URL(window.location.href)
+        const params = new URLSearchParams(url.search)
+        dear = params.get("dear")
+    }
+
+    onMount(getParamsTo)
 
 </script>
 
@@ -69,7 +77,16 @@
             </div>
         </div>
 
+
         <div class="pos-tengah-bawah">
+            {#if dear}
+                <div style="margin-bottom: 1rem; text-align: center">
+                    <div class="to-dear">
+                        DEAR
+                    </div>
+                    <div class="to-name">{dear}</div>
+                </div>
+            {/if}
             <div on:mouseover={()=>showHiasanBtn = true} on:mouseleave={()=>showHiasanBtn = false} on:click={setSlideOn}
                  class="open-btn">
                 Open Invitation
@@ -79,10 +96,10 @@
             </div>
         </div>
     </div>
-<!--    <div class="animate">-->
-<!--        <img src="/asset_apri/plane.svg" alt="plane">-->
-<!--        <img src="/asset_apri/plane.svg" alt="plane">-->
-<!--    </div>-->
+    <!--    <div class="animate">-->
+    <!--        <img src="/asset_apri/plane.svg" alt="plane">-->
+    <!--        <img src="/asset_apri/plane.svg" alt="plane">-->
+    <!--    </div>-->
     <AudioPlayer bind:this={player}/>
 </div>
 
@@ -175,6 +192,7 @@
         box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
         display: flex;
         gap: 0.5rem;
+        letter-spacing: 1px;
     }
 
     .open-btn-hiasan {
@@ -226,5 +244,16 @@
         to {
             transform: rotate(180deg);
         }
+    }
+    .to-dear{
+        font-family: Cinzel,sans-serif;
+        font-style: initial;
+        text-transform: capitalize;
+    }
+    .to-name{
+        letter-spacing: 1px;
+        text-transform: capitalize;
+        margin-top: 0.2rem;
+        font-weight: bold;
     }
 </style>

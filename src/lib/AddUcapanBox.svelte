@@ -1,10 +1,15 @@
 <div>
-    <textarea placeholder="Tulis Ucapan"></textarea>
-    <div style="display: flex; margin-top: 1rem">
+    <div class="flex-center">
+        <textarea placeholder="Tulis Ucapan"></textarea>
+    </div>
+    <div class="flex-center">
 
-        <img src="/asset_apri/user_icon.svg" alt="user icon" class="user-icon">
+        <div style="display: flex; margin-top: 1rem">
 
-        <input placeholder="Nama Lengkap*">
+            <img src="/asset_apri/user_icon.svg" alt="user icon" class="user-icon">
+
+            <input placeholder="Nama Lengkap*">
+        </div>
     </div>
     <div style="display: flex; justify-content: right">
         <button class="btn-kirim">Kirim</button>
@@ -13,13 +18,20 @@
 
 
 <style>
+    .flex-center {
+        display: flex;
+        justify-content: center;
+
+    }
+
     .btn-kirim {
         margin-top: 1rem;
-        font-size: 1.2rem;
+        font-size: 1rem;
         padding: 0.3rem 0.7rem;
         border-radius: 3px;
         background-color: white;
         border: 2px solid #c9c2c2;
+        color: #a49f9f;
     }
 
     .btn-kirim:active {

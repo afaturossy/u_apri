@@ -1,7 +1,6 @@
 <script>
     export function play(){
         player.play()
-        console.log("play")
     }
 
     function restartAudio() {
