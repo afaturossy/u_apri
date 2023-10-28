@@ -12,6 +12,7 @@
 </script>
 <div class="cont">
     <CoverDepan/>
+<!--    <Test/>-->
     <Box1/>
     <Box2/>
     <Box3/>
