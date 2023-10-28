@@ -38,8 +38,8 @@
         animation-delay: -0.5s;
     }
     .bird--two {
-        -webkit-animation-duration: 0.9s;
-        animation-duration: 0.9s;
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
         -webkit-animation-delay: -0.75s;
         animation-delay: -0.75s;
     }
@@ -50,8 +50,8 @@
         animation-delay: -0.25s;
     }
     .bird--four {
-        -webkit-animation-duration: 1.1s;
-        animation-duration: 1.1s;
+        -webkit-animation-duration: 1.25s;
+        animation-duration: 1.25s;
         -webkit-animation-delay: -0.5s;
         animation-delay: -0.5s;
     }
@@ -73,26 +73,30 @@
     .bird-container--one {
         -webkit-animation-duration: 15s;
         animation-duration: 15s;
-        -webkit-animation-delay: 0;
-        animation-delay: 0;
+        -webkit-animation-delay: 0s;
+        animation-delay: 0s;
+        /*background-color: blue;*/
     }
     .bird-container--two {
-        -webkit-animation-duration: 16s;
-        animation-duration: 16s;
+        /*background-color: red;*/
+        -webkit-animation-duration: 15s;
+        animation-duration: 15s;
         -webkit-animation-delay: 1s;
         animation-delay: 1s;
     }
     .bird-container--three {
-        -webkit-animation-duration: 14.6s;
-        animation-duration: 14.6s;
+        -webkit-animation-duration: 16s;
+        animation-duration: 16s;
         -webkit-animation-delay: 9.5s;
         animation-delay: 9.5s;
+        /*background-color: lime;*/
     }
     .bird-container--four {
         -webkit-animation-duration: 16s;
         animation-duration: 16s;
         -webkit-animation-delay: 10.25s;
         animation-delay: 10.25s;
+        /*background-color: yellow;*/
     }
 
     @-webkit-keyframes fly-cycle {

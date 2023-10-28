@@ -43,25 +43,25 @@
         <img class="bg" src="/asset_apri/bg_1.jpeg" alt="bg">
         <div class="c-text">
             <div style="text-align: center">
-                <div bind:this={el_1} class="heading-first">AKAD NIKAH</div>
-                <p bind:this={el_2}>Minggu, 18 Februari 2024
+                <div bind:this={el_1} class="heading-first before">AKAD NIKAH</div>
+                <p bind:this={el_2} class="before">Minggu, 18 Februari 2024
                     <br/>
                     Pukul 09.00 WIB
                 </p>
 
-                <div bind:this={el_3} class="heading">RESEPSI</div>
-                <p bind:this={el_4}>Minggu, 18 Februari 2024
+                <div bind:this={el_3} class="heading before">RESEPSI</div>
+                <p bind:this={el_4} class="before">Minggu, 18 Februari 2024
                     <br/>
                     Pukul 10.00 - 15.00 WIB
                 </p>
 
-                <div bind:this={el_5} class="heading">LOKASI</div>
-                <p bind:this={el_6}>
+                <div bind:this={el_5} class="heading before">LOKASI</div>
+                <p bind:this={el_6} class="before">
                     Balai Warga RW 007 Medang Lestari, Pagedangan, Tangerang, Banten
                 </p>
                 <br/>
                 <br/>
-                <div bind:this={el_7}>
+                <div bind:this={el_7} class="before">
                     <a href="https://maps.app.goo.gl/3vxPRFwZdcJGnYZP9" class="btn-map">VIEW MAP</a>
                 </div>
             </div>

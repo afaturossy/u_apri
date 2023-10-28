@@ -44,18 +44,18 @@
         </div>
     </div>
     <div class="content">
-        <p bind:this={el_1} class="item1">Sang Mempelai</p>
+        <p bind:this={el_1} class="item1 before">Sang Mempelai</p>
 
-        <p bind:this={el_2} class="item2">Apri Akbar</p>
-        <div bind:this={el_3} class="item-3">
+        <p bind:this={el_2} class="item2 before">Apri Akbar</p>
+        <div bind:this={el_3} class="item-3 before">
             <div>Putra ketiga dari</div>
             <div>Bapak Rustam Efendi Guci & Ibu Yuliani</div>
         </div>
         <div style="font-family: 'Playfair Display', serif ; font-size: xxx-large ; margin: 1rem 0 ;font-style: italic">
             &
         </div>
-        <p bind:this={el_4} class="item2">Tuti Puji Rahayu</p>
-        <div bind:this={el_5} class="item-3">
+        <p bind:this={el_4} class="item2 before">Tuti Puji Rahayu</p>
+        <div bind:this={el_5} class="item-3 before">
             <div>Putri pertama dari</div>
             <div>Bapak Slamet & Ibu Nur Jayati</div>
         </div>
