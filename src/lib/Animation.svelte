@@ -8,8 +8,11 @@
 <style>
 
     :global(.anim-scale) {
-        animation: scaleOnce 1.5s linear;
+        animation: scaleOnce 1s linear;
         animation-iteration-count: 1;
+    }
+    :global(.before) {
+        opacity: 0;
     }
 
     @keyframes scaleOnce {
@@ -61,6 +64,19 @@
         0% {
             opacity: .2;
             transform: translate(5rem ,-5rem) scale(1%);
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    :global(.anim-bmovescale) {
+        animation: bottomMoveScaleOnce 1.5s linear;
+        animation-iteration-count: 1;
+    }
+    @keyframes bottomMoveScaleOnce {
+        0% {
+            opacity: 0;
+            transform: translateY(3rem) scale(1%);
         }
         100% {
             opacity: 1;

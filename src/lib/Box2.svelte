@@ -1,18 +1,49 @@
 <script>
-    import Nama2Calon from "$lib/Nama2Calon.svelte";
+    // // observe class untuk animasi
+
+    import {onMount} from "svelte";
+
+    let observer
+    let el_1
+    let el_2
+    let el_3
+
+    function handleIntersection(entries, observer) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.remove("before");
+                entry.target.classList.add("anim-scale");
+            }
+        });
+    }
+
+    onMount(() => {
+        observer = new IntersectionObserver(handleIntersection, {
+            root: null, // Tidak ada elemen root yang diatur (viewport utama)
+            rootMargin: "0px", // Margin diatur ke 0px
+            threshold: 0.5 // Dipantau saat setengah elemen terlihat
+        });
+
+        observer.observe(el_1)
+        observer.observe(el_2)
+        observer.observe(el_3)
+    })
+
+
+
 </script>
 
 <div class="cont">
     <div class="c_left">
         <img class="bg" src="/asset_apri/bg_1.jpeg" alt="bg">
         <div class="c-text">
-            <p class="ayat anim-lmovescale">بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ</p>
-            <p class="arti anim-rmovescale">
+            <p bind:this={el_1} class="ayat before">بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ</p>
+            <p bind:this={el_2} class="arti before">
                 “Dan diantara tanda-tanda kekuasaan-Nya ialah diciptakan Nya untukmu pasangan hidup dari jenismu sendiri
                 supaya kamu mendapat ketenangan hati dan dijadikan-Nya kasih sayang diantara kamu. Sesungguhnya yang
                 demikian menjadi tanda-tanda kebesaran-Nya bagi orang-orang yang berfikir.”
             </p>
-            <p class="surah">( Ar-Rum: 21 )</p>
+            <p bind:this={el_3} class="surah before">( Ar-Rum: 21 )</p>
         </div>
     </div>
 
@@ -74,7 +105,7 @@
         font-family: 'Playfair Display', serif;
     }
 
-    .surah{
+    .surah {
         text-align: center;
         font-size: medium;
         color: #6b5a4c;
@@ -101,7 +132,8 @@
         .ayat {
             font-size: xx-large;
         }
-        .arti{
+
+        .arti {
             font-size: large;
             margin-top: 5rem;
         }

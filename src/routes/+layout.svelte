@@ -1,3 +1,7 @@
+<script>
+    import Bird from "$lib/Bird.svelte";
+</script>
+
 <svelte:head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -5,6 +9,9 @@
           rel="stylesheet">
 </svelte:head>
 
+<div style="position: fixed; top: 0; z-index: 100">
+    <Bird/>
+</div>
 <slot/>
 
 <style>

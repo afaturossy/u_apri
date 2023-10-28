@@ -6,7 +6,7 @@
     import Box4 from "$lib/Box4.svelte";
     import Box5 from "$lib/Box5.svelte";
     import Box6 from "$lib/Box6.svelte";
-    import Test from "$lib/Test.svelte";
+    import Test from "$lib/Animation.svelte";
     import Box7 from "$lib/Box7.svelte";
     import Box8 from "$lib/Box8.svelte";
 </script>
