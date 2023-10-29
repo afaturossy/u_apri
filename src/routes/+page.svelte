@@ -9,6 +9,7 @@
     import Test from "$lib/Animation.svelte";
     import Box7 from "$lib/Box7.svelte";
     import Box8 from "$lib/Box8.svelte";
+    import Box9 from "$lib/Box9.svelte";
 </script>
 <div class="cont">
     <CoverDepan/>
@@ -21,6 +22,7 @@
     <Box6/>
     <Box7/>
     <Box8/>
+    <Box9/>
 </div>
 <style>
     .cont{

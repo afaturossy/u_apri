@@ -1,10 +1,46 @@
 <script>
-    import Nama2Calon from "$lib/Nama2Calon.svelte";
+    // // observe class untuk animasi
+
+    import {onMount} from "svelte";
+
+    let observer
+    let el_1
+    let el_2
+    let el_3
+    let el_4
+    let el_5
+    let el_6
+
+    function handleIntersection(entries, observer) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.remove("before");
+                entry.target.classList.add("anim-scale");
+            }
+        });
+    }
+
+    onMount(() => {
+        observer = new IntersectionObserver(handleIntersection, {
+            root: null, // Tidak ada elemen root yang diatur (viewport utama)
+            rootMargin: "0px", // Margin diatur ke 0px
+            threshold: 0.5 // Dipantau saat setengah elemen terlihat
+        });
+
+        observer.observe(el_1)
+        observer.observe(el_2)
+        observer.observe(el_3)
+        observer.observe(el_4)
+        observer.observe(el_5)
+        observer.observe(el_6)
+    })
+
+
 </script>
 
 <div class="cont">
-    <div class="title">Love Story</div>
-    <div class="puisi">
+    <div bind:this={el_1} class="title before">Love Story</div>
+    <div bind:this={el_2} class="puisi before">
         <p>Tatkala gelap adalah rona utama sang angkasa, mentari hadir menjiwai bintang dengan siraman cahaya.</p>
         <p>Pun ketika hidup tak pernah berhenti menghadirkan tanda tanya, kau hadir dengan cinta dan keyakinan tuk jadi
             teman hidup selamanya.</p>
@@ -17,7 +53,7 @@
             <div class="cont-capsule">
                 <img style="height: 34rem" src="/asset_apri/bg_1.jpeg" class="bg" alt="bg">
                 <div class="c-text">
-                    <div class="pertemuan">
+                    <div bind:this={el_3} class="pertemuan before">
                         <div>
                             Pertemuan
                         </div>
@@ -41,14 +77,15 @@
             <div class="cont-capsule">
                 <img style="height: 26rem" src="/asset_apri/bg_1.jpeg" class="bg" alt="bg">
                 <div class="c-text">
-                    <div class="pertemuan">
+                    <div bind:this={el_4} class="pertemuan before">
                         <div>
                             Pendekatan
                         </div>
                         <p>
-                            Katanya cinta dapat tumbuh karena kebersamaan, seiring berjalannya waktu kami semakin dekat,
-                            berada di lingkungan kerja yang sama membuat kami cukup sering bertemu , alam seakan terus
-                            berkonspirasi sering menyatukan kami
+                            Katanya cinta dapat tumbuh dengan kebersamaan, seiring berjalanya waktu kami semakin
+                            dekat,berada di lingkungan kerja yang sama membuat kami cukup
+                            sering bertemu, diantara kami tapi alam seakan terus berkonspirasi untuk menyatukan kami
+                            berdua
                         </p>
                     </div>
                 </div>
@@ -60,7 +97,7 @@
             <div class="cont-capsule">
                 <img style="height: 25rem" src="/asset_apri/bg_1.jpeg" class="bg" alt="bg">
                 <div class="c-text">
-                    <div class="pertemuan">
+                    <div bind:this={el_5} class="pertemuan before">
                         <div>
                             Lamaran
                         </div>
@@ -80,7 +117,7 @@
             <div class="cont-capsule">
                 <img style="height: 33rem; margin-bottom: 4rem" src="/asset_apri/bg_1.jpeg" class="bg" alt="bg">
                 <div class="c-text">
-                    <div class="pertemuan">
+                    <div bind:this={el_6} class="pertemuan before">
                         <div>
                             Menikah
                         </div>
@@ -127,10 +164,12 @@
         padding: 0 2rem;
         color: #4f3434;
     }
-    .container-cerita{
+
+    .container-cerita {
         display: grid;
         grid-template-columns: 1fr;
     }
+
     .cont-capsule {
         position: relative;
         display: flex;

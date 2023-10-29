@@ -168,7 +168,7 @@
 
     .pos-tengah-atas {
         position: absolute;
-        top: 18%; /* Posisi vertikal di tengah parent */
+        top: 15%; /* Posisi vertikal di tengah parent */
         left: 50%; /* Posisi horizontal di tengah parent */
         transform: translate(-50%, -50%); /* Membuat elemen tepat di tengah parent */
         font-family: 'Playfair Display', serif;

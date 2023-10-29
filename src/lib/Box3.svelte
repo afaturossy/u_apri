@@ -2,11 +2,14 @@
     import {onMount} from "svelte";
 
     let observer
+    let observer2
+
     let el_1
     let el_2
     let el_3
     let el_4
     let el_5
+    let el_6
 
     function handleIntersection(entries, observer) {
         entries.forEach(entry => {
@@ -17,8 +20,22 @@
         });
     }
 
+    function handleIntersection2(entries, observer) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.remove("before");
+                entry.target.classList.add("anim-rotate");
+            }
+        });
+    }
+
     onMount(() => {
         observer = new IntersectionObserver(handleIntersection, {
+            root: null, // Tidak ada elemen root yang diatur (viewport utama)
+            rootMargin: "0px", // Margin diatur ke 0px
+            threshold: 0.5 // Dipantau saat setengah elemen terlihat
+        });
+        observer2 = new IntersectionObserver(handleIntersection2, {
             root: null, // Tidak ada elemen root yang diatur (viewport utama)
             rootMargin: "0px", // Margin diatur ke 0px
             threshold: 0.5 // Dipantau saat setengah elemen terlihat
@@ -29,6 +46,7 @@
         observer.observe(el_3)
         observer.observe(el_4)
         observer.observe(el_5)
+        observer2.observe(el_6)
     })
 
 
@@ -46,15 +64,15 @@
     <div class="content">
         <p bind:this={el_1} class="item1 before">Sang Mempelai</p>
 
-        <p bind:this={el_2} class="item2 before">Apri Akbar</p>
+        <p bind:this={el_2} class="item2 before">Apri Akbar S.T</p>
         <div bind:this={el_3} class="item-3 before">
             <div>Putra ketiga dari</div>
             <div>Bapak Rustam Efendi Guci & Ibu Yuliani</div>
         </div>
-        <div style="font-family: 'Playfair Display', serif ; font-size: xxx-large ; margin: 1rem 0 ;font-style: italic">
+        <div bind:this={el_6} class="before" style="font-family: 'Playfair Display', serif ; font-size: xxx-large ; margin: 1rem 0 ;font-style: italic">
             &
         </div>
-        <p bind:this={el_4} class="item2 before">Tuti Puji Rahayu</p>
+        <p bind:this={el_4} class="item2 before">Tuti Puji Rahayu S.Gz</p>
         <div bind:this={el_5} class="item-3 before">
             <div>Putri pertama dari</div>
             <div>Bapak Slamet & Ibu Nur Jayati</div>

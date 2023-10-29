@@ -69,26 +69,11 @@
         <img class="bg" src="/asset_apri/bg_2.jpg" alt="bg">
 
         <div class="content">
-            <div class="title">Countdown & Timer</div>
-            <div class="cont-timer">
-                <div bind:this={el_1} class="day-box before">
-                    <div class="angka">{days}</div>
-                    <div class="label">Day</div>
-                </div>
-
-                <div bind:this={el_2} class="day-box before">
-                    <div class="angka">{hours}</div>
-                    <div class="label">Hrs</div>
-                </div>
-                <div bind:this={el_3} class="day-box before">
-                    <div class="angka">{minutes}</div>
-                    <div class="label">Min</div>
-                </div>
-                <div bind:this={el_4} class="day-box before">
-                    <div class="angka">{seconds}</div>
-                    <div class="label">Sec</div>
-                </div>
+            <div class="title">
+            Thank You
             </div>
+            <div class="isi">~ One thing that cannot change, though, is the love that connects us all through time and space ~</div>
+            <div class="end">Akbar & Puji</div>
         </div>
     </div>
 
@@ -114,7 +99,7 @@
     }
 
     .content {
-        margin-top: 3rem;
+        margin-top: 10%;
         position: absolute;
         top: 0;
         left: 0;
@@ -132,36 +117,14 @@
         margin-top: 2rem;
     }
 
-    .cont-timer {
-        display: flex;
-        justify-content: center;
-        gap: 1rem;
-        margin-top: 4rem;
-    }
-
-    .day-box {
-        background-color: #4f3434;
-        color: white;
-        padding: 0.1rem 0.7rem;
-        border-radius: 0.5rem;
-        width: 2rem;
-    }
-
-    .angka {
-        font-size: large;
-        margin-top: 0.5rem;
+    .isi{
         text-align: center;
-        letter-spacing: 2px;
-        opacity: 0.5;
-        font-family: sans-serif;
+        padding: 1rem;
+    }
+    .end{
+        text-align: center;
+        padding-top: 1rem;
+        font-weight: bold;
     }
 
-    .label {
-        font-size: x-small;
-        text-align: center;
-        margin-top: 0.5rem;
-        margin-bottom: 0.2rem;
-        opacity: 0.3;
-        font-family: sans-serif;
-    }
 </style>

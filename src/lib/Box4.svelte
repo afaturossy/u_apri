@@ -52,7 +52,7 @@
                 <div bind:this={el_3} class="heading before">RESEPSI</div>
                 <p bind:this={el_4} class="before">Minggu, 18 Februari 2024
                     <br/>
-                    Pukul 10.00 - 15.00 WIB
+                    Pukul 11.00 - 16.00 WIB
                 </p>
 
                 <div bind:this={el_5} class="heading before">LOKASI</div>

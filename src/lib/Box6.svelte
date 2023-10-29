@@ -1,8 +1,60 @@
+<script>
+    // // observe class untuk animasi
+
+    import {onMount} from "svelte";
+
+    let observer
+    let observer2
+    let el_1
+    let el_2
+
+    function handleIntersection(entries, observer) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.remove("before");
+                entry.target.classList.add("anim-scale");
+            }
+        });
+    }
+
+    function handleIntersection2(entries, observer2) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.remove("before");
+                entry.target.classList.add("anim-rotate");
+            }
+        });
+    }
+
+    onMount(() => {
+        observer = new IntersectionObserver(handleIntersection, {
+            root: null, // Tidak ada elemen root yang diatur (viewport utama)
+            rootMargin: "0px", // Margin diatur ke 0px
+            threshold: 0.5 // Dipantau saat setengah elemen terlihat
+        });
+
+        observer2 = new IntersectionObserver(handleIntersection2, {
+            root: null, // Tidak ada elemen root yang diatur (viewport utama)
+            rootMargin: "0px", // Margin diatur ke 0px
+            threshold: 0.5 // Dipantau saat setengah elemen terlihat
+        });
+
+        observer.observe(el_1)
+        observer2.observe(el_2)
+    })
+
+
+</script>
+
+
 <div class="cont">
     <div class="c_left">
         <img class="bg" src="/asset_apri/bg_1.jpeg" alt="bg">
-        <img src="/asset_apri/Untitled-3.png" class="hiasan-atas">
-        <div class="c-text">
+        <div class="hiasan-atas">
+            <img bind:this={el_2} class="before" src="/asset_apri/Untitled-3.png" style="width: 100%; height: 100%" alt="hiasan">
+
+        </div>
+        <div bind:this={el_1} class="c-text before">
             <div style="text-align: center">
                 <div class="heading-first">Will You Attend?</div>
                 <div class="box-name">
@@ -77,12 +129,12 @@
         opacity: .6;
     }
 
-    .hiasan-atas{
+    .hiasan-atas {
         position: absolute;
         top: 0;
         left: 0;
         width: 50vw;
-        transform: translate(-2rem , -2rem) ;
+        transform: translate(-2rem, -2rem);
     }
 
     .c-text {
