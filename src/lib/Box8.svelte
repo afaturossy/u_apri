@@ -4,6 +4,12 @@
 
     export let pesan = []
     export let reloadPesan
+
+    let scrollableContainer
+
+    function scrollToElement() {
+        scrollableContainer.scrollTop = 0;
+    }
 </script>
 
 <div class="cont">
@@ -11,11 +17,12 @@
     <div class="cont-tulis">
         <div>
             <div style="margin-top: 3rem">
-                <AddUcapanBox reloadPesan={reloadPesan} toggleAddBalas={()=>{}}/>
+                <AddUcapanBox reloadPesan={()=>{reloadPesan(); scrollToElement()}} toggleAddBalas={()=>{}}/>
             </div>
             <div class="cont-display">
-                <div class="jml-ucapan">3 UCAPAN</div>
-                <div style="overflow-y: auto; max-height: 30rem; min-height: 5rem; margin-bottom: 2rem">
+                <div class="jml-ucapan">{pesan.length} UCAPAN</div>
+                <div bind:this={scrollableContainer}
+                     style="overflow-y: auto; max-height: 30rem; min-height: 5rem; margin-bottom: 2rem">
                     {#each pesan as p}
                         <BoxDisplayUcapan pesan={p} reloadPesan={reloadPesan}/>
                     {/each}
