@@ -43,6 +43,24 @@
         observer2.observe(el_2)
     })
 
+    // ---- handle fetch data ke api database
+    let nama
+    let hadir
+    let jumlah
+
+    function submit() {
+        if (nama && hadir && jumlah) {
+            jumlah = parseInt(jumlah)
+            fetch("/api/add-hadir?nama=" + nama + "&hadir=" +
+                hadir + "&jumlah=" + jumlah
+            )
+            nama = null
+            hadir = null
+            alert("Terima kasih telah mengisi data ini")
+            return
+        }
+        alert("masukan data dengan benar dan lengkap")
+    }
 
 </script>
 
@@ -51,7 +69,8 @@
     <div class="c_left">
         <img class="bg" src="/asset_apri/bg_1.jpeg" alt="bg">
         <div class="hiasan-atas">
-            <img bind:this={el_2} class="before" src="/asset_apri/Untitled-3.png" style="width: 100%; height: 100%" alt="hiasan">
+            <img bind:this={el_2} class="before" src="/asset_apri/Untitled-3.png" style="width: 100%; height: 100%"
+                 alt="hiasan">
 
         </div>
         <div bind:this={el_1} class="c-text before">
@@ -60,17 +79,17 @@
                 <div class="box-name">
                     <label for="name">Name</label>
                     <div style="display: flex; justify-content: center">
-                        <input id="name">
+                        <input bind:value={nama} id="name">
 
                     </div>
                 </div>
                 <div class="box-hadir">
                     <div>Apakah Kamu Akan Hadir?</div>
                     <div style="margin-top: 0.5rem">
-                        <input type="radio" id="ya" name="hadir" value="Ya Tentu">
+                        <input type="radio" id="ya" name="hadir" value="true" bind:group={hadir}>
                         <label for="ya">Ya Tentu</label>
                         <br/>
-                        <input type="radio" id="tidak" name="hadir" value="Maaf, Tidak">
+                        <input type="radio" id="tidak" name="hadir" value="false" bind:group={hadir}>
                         <label for="tidak">Maaf, Tidak</label>
                     </div>
                 </div>
@@ -79,18 +98,18 @@
                         Jumlah Tamu Yang Hadir?
                     </label>
                     <div>
-                        <select>
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                            <option>6</option>
+                        <select bind:value={jumlah}>
+                            <option value=1>1</option>
+                            <option value=2>2</option>
+                            <option value=3>3</option>
+                            <option value=4>4</option>
+                            <option value=5>5</option>
+                            <option value=6>6</option>
                         </select>
                     </div>
                 </div>
                 <div class="submit">
-                    <button>SUBMIT</button>
+                    <button on:click={submit}>SUBMIT</button>
                 </div>
             </div>
         </div>

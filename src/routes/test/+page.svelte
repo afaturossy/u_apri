@@ -1,5 +1,15 @@
 <script>
-    import Bird from "$lib/Bird.svelte";
+    export let data
+    console.log(data)
+
+    async function reloadPesan() {
+        const res = await fetch("/api/get-pesan")
+        data.pesan = await res.json()
+    }
+
 </script>
 
-<Bird/>
+
+<div>
+    test
+</div>

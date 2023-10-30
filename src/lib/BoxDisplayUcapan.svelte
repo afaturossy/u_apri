@@ -15,13 +15,18 @@
 
     function toggleShowBalas() {
         showBalasan = !showBalasan
-        if(!showBalasan) showAddBalas = false
+        if (!showBalasan) showAddBalas = false
     }
+
+    // --- handle pesan masuk
+    export let pesan
+
+    export let reloadPesan
 </script>
 
 <div class="box-display">
-    <div class="name">Arek Turu</div>
-    <div class="comment">selamat ya</div>
+    <div class="name">{pesan.nama}</div>
+    <div class="comment">{pesan.pesan}</div>
     <div class="cont-btn-reply">
         <img class="btn-reply-icon" src="/asset_apri/reply-icon.webp" alt="btn-reply">
         <button on:click={toggleAddBalas} class="btn-reply">Reply</button>
@@ -31,13 +36,14 @@
     </div>
     <div bind:this={balasElement} style="margin-top: 1rem; margin-left: 1rem">
         {#if showAddBalas}
-            <AddUcapanBox/>
+            <AddUcapanBox id_pesan={pesan.id} reloadPesan={reloadPesan} toggleAddBalas={toggleAddBalas}/>
         {/if}
     </div>
     <div style="margin-left: 1rem; border-left: 1px solid #c2c1c1">
         {#if showBalasan}
-            <BoxDisplayUcapanNoReply/>
-            <BoxDisplayUcapanNoReply/>
+            {#each pesan.balasan.reverse() as p}
+                <BoxDisplayUcapanNoReply pesan={p}/>
+            {/each}
         {/if}
     </div>
 </div>

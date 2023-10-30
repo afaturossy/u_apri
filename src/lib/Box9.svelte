@@ -33,33 +33,33 @@
 
     // // observe class untuk animasi
 
-    let observer
-    let el_1
-    let el_2
-    let el_3
-    let el_4
-
-    function handleIntersection(entries, observer) {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.remove("before");
-                entry.target.classList.add("anim-scale");
-            }
-        });
-    }
-
-    onMount(() => {
-        observer = new IntersectionObserver(handleIntersection, {
-            root: null, // Tidak ada elemen root yang diatur (viewport utama)
-            rootMargin: "0px", // Margin diatur ke 0px
-            threshold: 0.5 // Dipantau saat setengah elemen terlihat
-        });
-
-        observer.observe(el_1)
-        observer.observe(el_2)
-        observer.observe(el_3)
-        observer.observe(el_4)
-    })
+    // let observer
+    // let el_1
+    // let el_2
+    // let el_3
+    // let el_4
+    //
+    // function handleIntersection(entries, observer) {
+    //     entries.forEach(entry => {
+    //         if (entry.isIntersecting) {
+    //             entry.target.classList.remove("before");
+    //             entry.target.classList.add("anim-scale");
+    //         }
+    //     });
+    // }
+    //
+    // onMount(() => {
+    //     observer = new IntersectionObserver(handleIntersection, {
+    //         root: null, // Tidak ada elemen root yang diatur (viewport utama)
+    //         rootMargin: "0px", // Margin diatur ke 0px
+    //         threshold: 0.5 // Dipantau saat setengah elemen terlihat
+    //     });
+    //
+    //     observer.observe(el_1)
+    //     observer.observe(el_2)
+    //     observer.observe(el_3)
+    //     observer.observe(el_4)
+    // })
 
 
 </script>

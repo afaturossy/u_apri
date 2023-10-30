@@ -1,8 +1,6 @@
 
 <div style="display: flex">
-    <div class="anim-rotate">
-        kopi
-    </div>
+
 </div>
 
 <style>

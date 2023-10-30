@@ -1,6 +1,30 @@
+<script>
+    export let id_pesan = null
+    export let reloadPesan
+    export let toggleAddBalas
+
+    let nama
+    let pesan
+
+    async function submit() {
+        if (nama && pesan) {
+            if (id_pesan) {
+                await fetch(`/api/add-balasan?id=${id_pesan}&nama=${nama}&balasan=${encodeURIComponent(pesan)}`)
+            } else {
+                await fetch(`/api/add-pesan?nama=${nama}&pesan=${encodeURIComponent(pesan)}`)
+            }
+            pesan = null
+            toggleAddBalas()
+            await reloadPesan()
+            return
+        }
+        alert("masukan nama dan pesan")
+    }
+</script>
+
 <div>
     <div class="flex-center">
-        <textarea placeholder="Tulis Ucapan"></textarea>
+        <textarea bind:value={pesan} placeholder="Tulis Ucapan"></textarea>
     </div>
     <div class="flex-center">
 
@@ -8,11 +32,11 @@
 
             <img src="/asset_apri/user_icon.svg" alt="user icon" class="user-icon">
 
-            <input placeholder="Nama Lengkap*">
+            <input bind:value={nama} placeholder="Nama Lengkap*">
         </div>
     </div>
     <div style="display: flex; justify-content: right">
-        <button class="btn-kirim">Kirim</button>
+        <button on:click={submit} class="btn-kirim">Kirim</button>
     </div>
 </div>
 

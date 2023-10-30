@@ -2,7 +2,8 @@
     import AddUcapanBox from "$lib/AddUcapanBox.svelte";
     import BoxDisplayUcapan from "$lib/BoxDisplayUcapan.svelte";
 
-    let komentar = []
+    export let pesan = []
+    export let reloadPesan
 </script>
 
 <div class="cont">
@@ -10,18 +11,14 @@
     <div class="cont-tulis">
         <div>
             <div style="margin-top: 3rem">
-                <AddUcapanBox/>
+                <AddUcapanBox reloadPesan={reloadPesan} toggleAddBalas={()=>{}}/>
             </div>
             <div class="cont-display">
                 <div class="jml-ucapan">3 UCAPAN</div>
                 <div style="overflow-y: auto; max-height: 30rem; min-height: 5rem; margin-bottom: 2rem">
-                    <BoxDisplayUcapan/>
-                    <BoxDisplayUcapan/>
-                    <BoxDisplayUcapan/>
-                    <BoxDisplayUcapan/>
-                    <BoxDisplayUcapan/>
-                    <BoxDisplayUcapan/>
-                    <BoxDisplayUcapan/>
+                    {#each pesan as p}
+                        <BoxDisplayUcapan pesan={p} reloadPesan={reloadPesan}/>
+                    {/each}
                 </div>
             </div>
 

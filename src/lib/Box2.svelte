@@ -13,6 +13,7 @@
             if (entry.isIntersecting) {
                 entry.target.classList.remove("before");
                 entry.target.classList.add("anim-scale");
+                console.log("change class")
             }
         });
     }

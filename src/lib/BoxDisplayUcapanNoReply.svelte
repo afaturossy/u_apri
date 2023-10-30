@@ -1,6 +1,10 @@
+<script>
+    export let pesan
+</script>
+
 <div class="box-display">
-    <div class="name">abang jafar</div>
-    <div class="comment">selamat ya</div>
+    <div class="name">{pesan.nama}</div>
+    <div class="comment">{pesan.pesan}</div>
 </div>
 
 <style>
