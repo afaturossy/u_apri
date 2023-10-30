@@ -10,6 +10,7 @@
     import Box8 from "$lib/Box8.svelte";
     import Box9 from "$lib/Box9.svelte";
     import Animation from "$lib/Animation.svelte";
+    import Bird from "$lib/Bird.svelte";
 
     export let data;
     console.log(data)
@@ -19,6 +20,10 @@
         data.pesan = pesan.reverse()
     }
 </script>
+<div style="position: fixed; top: 0; left: 0; right :0; z-index:  100;">
+    <Bird/>
+</div>
+
 <div class="cont">
         <CoverDepan/>
     <Box1/>

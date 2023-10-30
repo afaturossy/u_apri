@@ -1,6 +1,3 @@
-<script>
-    import Bird from "$lib/Bird.svelte";
-</script>
 
 <svelte:head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,9 +8,6 @@
     <meta name="description" content="undangan pernikahan akbar & puji , tahun 2024"/>
 </svelte:head>
 
-<div style="position: fixed; top: 0; left: 0; right :0; z-index:  100;">
-    <Bird/>
-</div>
 <slot/>
 
 <style>
