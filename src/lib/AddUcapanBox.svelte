@@ -1,4 +1,7 @@
 <script>
+    import {getNamaLS, setNamaLS} from "$lib/method/helper.js";
+    import {onMount} from "svelte";
+
     export let id_pesan = null
     export let reloadPesan
     export let toggleAddBalas
@@ -6,8 +9,17 @@
     let nama
     let pesan
 
+    onMount(()=>{
+        const v = getNamaLS()
+        if (v){
+            nama = v
+        }
+    })
+
     async function submit() {
         if (nama && pesan) {
+            setNamaLS(nama)
+
             if (id_pesan) {
                 await fetch(`/api/add-balasan?id=${id_pesan}&nama=${nama}&balasan=${encodeURIComponent(pesan)}`)
             } else {
