@@ -1,4 +1,4 @@
-const host = "http://78.128.127.47:4002"
+const host = "http://127.0.0.1:4002"
 
 async function getHadir() {
     try {
