@@ -79,14 +79,19 @@
 
 
         <div class="pos-tengah-bawah">
+            <div style="margin-bottom: 1rem; text-align: center">
+                Kepada Yth:
+                <br/>
+                Bapak/Ibu/Saudara/i
             {#if dear}
-                <div style="margin-bottom: 1rem; text-align: center">
+                <div>
                     <div class="to-dear">
-                        DEAR
                     </div>
                     <div class="to-name">{dear}</div>
                 </div>
             {/if}
+
+            </div>
             <div on:mouseover={()=>showHiasanBtn = true} on:mouseleave={()=>showHiasanBtn = false} on:click={setSlideOn}
                  class="open-btn">
                 Open Invitation
@@ -245,12 +250,15 @@
             transform: rotate(180deg);
         }
     }
-    .to-dear{
-        font-family: Cinzel,sans-serif;
+
+    .to-dear {
+        font-family: Cinzel, sans-serif;
         font-style: initial;
         text-transform: capitalize;
+        text-align: center;
     }
-    .to-name{
+
+    .to-name {
         letter-spacing: 1px;
         text-transform: capitalize;
         margin-top: 0.2rem;

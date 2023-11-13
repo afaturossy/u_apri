@@ -64,7 +64,7 @@
     <div class="content">
         <p bind:this={el_1} class="item1 before">Sang Mempelai</p>
 
-        <p bind:this={el_2} class="item2 before">Apri Akbar S.T</p>
+        <p bind:this={el_2} class="item2 before">Apri Akbar, S.T</p>
         <div bind:this={el_3} class="item-3 before">
             <div>Putra ketiga dari</div>
             <div>Bapak Rustam Efendi Guci & Ibu Yuliani</div>
@@ -72,7 +72,7 @@
         <div bind:this={el_6} class="before" style="font-family: 'Playfair Display', serif ; font-size: xxx-large ; margin: 1rem 0 ;font-style: italic">
             &
         </div>
-        <p bind:this={el_4} class="item2 before">Tuti Puji Rahayu S.Gz</p>
+        <p bind:this={el_4} class="item2 before">Tuti Puji Rahayu, S.Gz</p>
         <div bind:this={el_5} class="item-3 before">
             <div>Putri pertama dari</div>
             <div>Bapak Slamet & Ibu Nur Jayati</div>

@@ -13,7 +13,7 @@
     import Bird from "$lib/Bird.svelte";
 
     export let data;
-    console.log(data)
+    // console.log(data)
     async function reloadPesan() {
         const res = await fetch("/api/get-pesan")
         const pesan = await res.json()
