@@ -31,6 +31,7 @@
     .hiasan-1 {
         padding-top: 1.5rem;
         z-index: 1;
+        transform: rotate(-30deg);
     }
 
     /* Media query untuk layar HP (contoh: lebar maksimum 480px) */

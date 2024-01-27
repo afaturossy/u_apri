@@ -2,22 +2,27 @@
     import Nama2Calon from "$lib/Nama2Calon.svelte";
 </script>
 
-<div class="cont">
-    <div class="title">SAVE THE DATE</div>
-
-    <div class="c_left">
-        <div>
-            <Nama2Calon/>
-        </div>
+<div style="position: relative">
+    <div class="cont" style="overflow: hidden">
+        <img src="/asset_apri/Foto.jpg" style="object-fit: cover; opacity: 0.5">
     </div>
-    <div class="footer">
-        <p>The Wedding |18.02.2024| Tangerang</p>
+    <div style="position: absolute ; top: 0; left: 0; right: 0; background-color: rgba(239, 235, 226, 0.5) ;" class="cont" >
+        <div class="title">SAVE THE DATE</div>
+        <div class="c_left">
+            <div>
+                <Nama2Calon/>
+            </div>
+        </div>
+        <div class="footer">
+            <p>The Wedding |18.02.2024| Tangerang</p>
+        </div>
     </div>
 </div>
 
+
 <style>
     .cont {
-        background-color: #efebe2;
+        /*background-color: #efebe2;*/
         height: 38rem;
         display: flex;
         flex-direction: column;
@@ -40,7 +45,7 @@
         justify-items: center;
         justify-content: center;
         background-color: red;
-        margin-top: 11rem;
+        margin-top: 200px;
     }
 
     .footer {
@@ -48,6 +53,6 @@
         font-style: italic;
         display: flex;
         justify-content: center;
-        margin-top: 15rem
+        margin-top: 1rem
     }
 </style>
