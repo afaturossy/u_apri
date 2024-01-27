@@ -4,7 +4,7 @@
 
 <div style="position: relative">
     <div class="cont" style="overflow: hidden">
-        <img src="/asset_apri/Foto.jpg" style="object-fit: cover; opacity: 0.5">
+        <img src="/asset_apri/Foto.jpg" style="object-fit: cover; opacity: 0.6">
     </div>
     <div style="position: absolute ; top: 0; left: 0; right: 0; background-color: rgba(239, 235, 226, 0.5) ;" class="cont" >
         <div class="title">SAVE THE DATE</div>
