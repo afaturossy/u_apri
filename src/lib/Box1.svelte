@@ -4,9 +4,9 @@
 
 <div style="position: relative">
     <div class="cont" style="overflow: hidden">
-        <img src="/asset_apri/Foto.jpg" style="object-fit: cover; opacity: 0.6">
+        <img src="/asset_apri/Foto.jpg" style="object-fit: cover; opacity: 1">
     </div>
-    <div style="position: absolute ; top: 0; left: 0; right: 0; background-color: rgba(239, 235, 226, 0.5) ;" class="cont" >
+    <div style="position: absolute ; top: 0; left: 0; right: 0; background-color: rgba(239, 235, 226, 0.28) ;" class="cont" >
         <div class="title">SAVE THE DATE</div>
         <div class="c_left">
             <div>
@@ -38,6 +38,7 @@
         font-weight: bold;
         text-align: center;
         padding-top: 3rem;
+        text-shadow: 0 0 5px #fff;
     }
 
     .c_left {
@@ -51,8 +52,10 @@
     .footer {
         font-family: 'Playfair Display', serif;
         font-style: italic;
+        font-weight: bold;
         display: flex;
         justify-content: center;
-        margin-top: 1rem
+        margin-top: 1rem;
+        text-shadow: 0 0 5px #fff;
     }
 </style>
