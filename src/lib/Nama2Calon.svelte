@@ -1,7 +1,7 @@
 <div style="position: relative">
-<!--    <div class="pos-tengah">-->
-<!--        <img class="hiasan-1" decoding="async" src="/asset_apri/Untitled-1.png" alt="unit-1">-->
-<!--    </div>-->
+    <div class="pos-tengah">
+        <img class="hiasan-1" decoding="async" src="/asset_apri/Untitled-1.png" alt="unit-1">
+    </div>
     <div class="pos-tengah">
         <div class="names">
             <div>Akbar</div>
@@ -19,7 +19,7 @@
     }
 
     .names {
-        font-size: 2.5rem;
+        font-size: 1.8rem;
         text-align: center;
         /*color: #4f3434;*/
         /*color: rgba(239, 235, 226, 1);*/
@@ -28,7 +28,6 @@
         font-weight: bold;
         z-index: 10;
         font-style: italic;
-        text-shadow: 1px 1px 6px #fff;
     }
 
     .hiasan-1 {
