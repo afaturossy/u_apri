@@ -40,7 +40,7 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content=" Undangan Pernikahan Akbar & Puji">
     <meta property="og:description" content="Apri Akbar,S.T dan Tuti Puji Rahayu S.Gz Pada 18 Februari 2024">
-    <meta property="og:image" content="https://akbar-puji.digital/asset_apri/Foto_thumb2.png">
+    <meta property="og:image" content="https://akbar-puji.digital/asset_apri/Foto_thumb.webp">
 
     <!-- Twitter Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
@@ -49,7 +49,7 @@
     <meta name="twitter:title" content=" Undangan Pernikahan Akbar & Puji">
     <meta name="twitter:description" content="Apri Akbar,S.T dan Tuti Puji Rahayu S.Gz Pada 18 Februari 2024">
 
-    <meta name="twitter:image" content="https://akbar-puji.digital/asset_apri/Foto_thumb2.png">
+    <meta name="twitter:image" content="https://akbar-puji.digital/asset_apri/Foto_thumb.webp">
 
 </svelte:head>
 
