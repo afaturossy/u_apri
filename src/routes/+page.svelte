@@ -25,15 +25,32 @@
 </script>
 
 <svelte:head>
-    <meta property="og:title" content="Akbar & Puji | Undangan Pernikahan">
-    <meta property="og:description" content="Apri Akbar,S.T dan Tuti Puji Rahayu S.Gz Pada 18 Februari 2024">
-    <meta property="og:image" content="https://akbar-puji.digital/asset_apri/Foto_thumb.webp">
-    <meta property="og:image:type" content="image/webp">
-    <meta property="og:url" content="https://akbar-puji.digital">
+<!--    <meta property="og:title" content="Akbar & Puji | Undangan Pernikahan">-->
+<!--    <meta property="og:description" content="Apri Akbar,S.T dan Tuti Puji Rahayu S.Gz Pada 18 Februari 2024">-->
+<!--    <meta property="og:image" content="https://akbar-puji.digital/asset_apri/Foto_thumb.webp">-->
+<!--    <meta property="og:image:type" content="image/webp">-->
+<!--    <meta property="og:url" content="https://akbar-puji.digital">-->
 
-<!--    <meta property="og:image:width" content="1200"> &lt;!&ndash; Lebar gambar cover &ndash;&gt;-->
-<!--    <meta property="og:image:height" content="630">-->
-    <!-- ... tag meta lainnya ... -->
+    <!-- HTML Meta Tags -->
+    <title> Undangan Pernikahan Akbar & Puji</title>
+    <meta name="description" content="Apri Akbar,S.T dan Tuti Puji Rahayu S.Gz Pada 18 Februari 2024">
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://akbar-puji.digital">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content=" Undangan Pernikahan Akbar & Puji">
+    <meta property="og:description" content="Apri Akbar,S.T dan Tuti Puji Rahayu S.Gz Pada 18 Februari 2024">
+    <meta property="og:image" content="https://akbar-puji.digital/asset_apri/Foto_thumb.png">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="akbar-puji.digital">
+    <meta property="twitter:url" content="https://akbar-puji.digital">
+    <meta name="twitter:title" content=" Undangan Pernikahan Akbar & Puji">
+    <meta name="twitter:description" content="Apri Akbar,S.T dan Tuti Puji Rahayu S.Gz Pada 18 Februari 2024">
+
+    <meta name="twitter:image" content="https://akbar-puji.digital/asset_apri/Foto_thumb.png">
+
 </svelte:head>
 
 <div style="position: fixed; top: 0; left: 0; right :0; z-index:  100;">
