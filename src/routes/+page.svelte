@@ -27,7 +27,10 @@
 <svelte:head>
     <meta property="og:title" content="Akbar & Puji | Undangan Pernikahan">
     <meta property="og:description" content="Apri Akbar,S.T dan Tuti Puji Rahayu S.Gz Pada 18 Februari 2024">
-    <meta property="og:image" content="/asset_apri/Foto.jpg">
+    <meta property="og:image" content="https://akbar-puji.digital/asset_apri/Foto_thumb.webp">
+    <meta property="og:image:type" content="image/webp">
+    <meta property="og:url" content="https://akbar-puji.digital">
+
 <!--    <meta property="og:image:width" content="1200"> &lt;!&ndash; Lebar gambar cover &ndash;&gt;-->
 <!--    <meta property="og:image:height" content="630">-->
     <!-- ... tag meta lainnya ... -->
