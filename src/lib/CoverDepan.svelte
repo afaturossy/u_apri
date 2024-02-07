@@ -6,6 +6,7 @@
     let showHiasanBtn = false
     let player
     let dear = null
+    let dear2 = null
 
     function setSlideOn() {
         player.play()
@@ -51,6 +52,7 @@
         const url = new URL(window.location.href)
         const params = new URLSearchParams(url.search)
         dear = params.get("dear")
+        dear2 = params.get("dear2")
     }
 
     onMount(getParamsTo)
@@ -83,13 +85,19 @@
                 Kepada Yth:
                 <br/>
                 Bapak/Ibu/Saudara/i
-            {#if dear}
-                <div>
-                    <div class="to-dear">
+                {#if dear}
+                    <div>
+                        <div class="to-name">{dear}</div>
                     </div>
-                    <div class="to-name">{dear}</div>
-                </div>
-            {/if}
+                {/if}
+                {#if dear !== null && dear2 !== null}
+                    <div>&</div>
+                {/if}
+                {#if dear2}
+                    <div>
+                        <div class="to-name">{dear2}</div>
+                    </div>
+                {/if}
 
             </div>
             <div on:mouseover={()=>showHiasanBtn = true} on:mouseleave={()=>showHiasanBtn = false} on:click={setSlideOn}
